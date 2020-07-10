@@ -28,3 +28,12 @@ fi
 
 # Create a Git alias that references the Git dotfiles repository and the local root directory from which Git adds files by default
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# Change the default vim editor
+export EDITOR="nvim"
+
+# Use a modern ls
+alias ls='exa'
+
+# Alias to open files
+alias xopen="xdg-open"
