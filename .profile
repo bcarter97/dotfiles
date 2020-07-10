@@ -37,3 +37,5 @@ alias ls='exa'
 
 # Alias to open files
 alias xopen="xdg-open"
+
+export PATH="$HOME/.cargo/bin:$PATH"
