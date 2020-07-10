@@ -1,0 +1,8 @@
+[user]
+	name = Ben Carter
+	email = benjohn.carter@gmail.com
+	signingkey = 215445B776F3CA5B
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
