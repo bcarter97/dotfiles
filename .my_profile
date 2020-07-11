@@ -20,4 +20,8 @@ alias ls="exa"
 # Alias to open files
 alias xopen="xdg-open"
 
+# Export cargo path
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Make brew available in shell
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
