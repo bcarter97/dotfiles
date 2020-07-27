@@ -57,7 +57,16 @@ $ git config --global commit.gpgSign true
 $ git config --global user.signingKey sec_key
 ```
 
-## Source relevant files
+## Grabbing dotfiles
+
+```bash
+$ git clone --bare git@github.com:bcarter97/bcarter97 $HOME/.cfg
+$ alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+$ dotfiles checkout
+$ dotfiles config --local status.showUntrackedFiles no
+```
+
+### Source relevant files
 
 ```bash
 $ echo 'source ~/.my_profile' >> ~/.bashrc
@@ -68,4 +77,3 @@ $ mkdir ~/.config/nvim && touch ~/.config/nvim/init.vim && echo 'source ~/.vimrc
 ```vim
 :PlugInstall
 :call coc#util#install()
-
