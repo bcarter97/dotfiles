@@ -40,6 +40,7 @@ $ ssh-keygen -t rsa -b 4096 -C "benjohn.carter@gmail.com"
 $ eval $(ssh-agent -s)
 $ ssh-add ~/.ssh/id_rsa
 $ cat ~/.ssh/id_rsa.pub | clip.exe
+$ mkdir -p ~/dev/git/github
 ```
 
 - add the clipped key to [Github](https://github.com/settings/keys)
