@@ -29,7 +29,9 @@ $ sudo apt install yarn
 
 ## Neovim
 ```bash
-$ brew install neovim
+$ sudo add-apt-repository ppa:neovim-ppa/stable
+$ sudo apt-get update
+$ sudo apt-get install neovim
 ```
 
 ## git
@@ -46,8 +48,11 @@ $ cat ~/.ssh/id_rsa.pub | clip.exe
 
 ```bash
 $ echo 'source ~/.my_profile' >> ~/.bashrc
+$ mkdir ~/.config/nvim && touch ~/.config/nvim/init.vim && echo 'source ~/.vimrc' >> ~/.config/nvim/init.vim 
 ```
 
+## Starting vim for the first time
+```vim
+:PlugInstall
+:call coc#util#install()
 
-- source `~/.my_profile` from `~/.bashrc`
-- source `~/.vimrc` from `~/.config/nvim/init.vim`
