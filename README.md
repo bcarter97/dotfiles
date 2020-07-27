@@ -4,12 +4,7 @@
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 $ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-$ brew install gcc
-```
-
-## FZF
-```bash
-brew install fzf
+$ brew install gcc exa fzf
 ```
 
 ## NVM
@@ -34,9 +29,7 @@ $ sudo apt install yarn
 
 ## Neovim
 ```bash
-$ sudo add-apt-repository ppa:neovim-ppa/stable
-$ sudo apt-get update
-$ sudo apt-get install neovim
+$ brew install neovim
 ```
 
 ## git
@@ -48,6 +41,13 @@ $ cat ~/.ssh/id_rsa.pub | clip.exe
 ```
 
 - add the clipped key to [Github](https://github.com/settings/keys)
+
+## Source relevant files
+
+```bash
+$ echo 'source ~/.my_profile' >> ~/.bashrc
+```
+
 
 - source `~/.my_profile` from `~/.bashrc`
 - source `~/.vimrc` from `~/.config/nvim/init.vim`
