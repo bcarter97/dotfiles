@@ -35,6 +35,8 @@ $ sudo apt-get install neovim
 ```
 
 ## git
+
+### ssh
 ```bash
 $ ssh-keygen -t rsa -b 4096 -C "benjohn.carter@gmail.com"
 $ eval $(ssh-agent -s)
@@ -44,6 +46,16 @@ $ mkdir -p ~/dev/git/github
 ```
 
 - add the clipped key to [Github](https://github.com/settings/keys)
+
+### gpg
+```bash
+$ sudo apt install gnupg2
+$ gpg --full-generate-key
+$ gpg --list-secret-keys --keyid-format LONG
+$ gpg --armor --export sec_key
+$ git config --global commit.gpgSign true
+$ git config --global user.signingKey sec_key
+```
 
 ## Source relevant files
 
