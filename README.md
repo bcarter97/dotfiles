@@ -76,4 +76,3 @@ $ mkdir ~/.config/nvim && touch ~/.config/nvim/init.vim && echo 'source ~/.vimrc
 ## Starting vim for the first time
 ```vim
 :PlugInstall
-:call coc#util#install()
