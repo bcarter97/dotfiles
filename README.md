@@ -60,7 +60,7 @@ $ git config --global user.signingKey sec_key
 ## Grabbing dotfiles
 
 ```bash
-$ git clone --bare git@github.com:bcarter97/bcarter97 $HOME/.cfg
+$ git clone --bare git@github.com:bcarter97/dotfiles $HOME/.cfg
 $ alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 $ dotfiles checkout
 $ dotfiles config --local status.showUntrackedFiles no
