@@ -1,5 +1,13 @@
 [user]
 	name = Ben Carter
 	email = benjohn.carter@gmail.com
+
 [commit]
 	gpgsign = true
+
+[fetch]
+	prune = true
+
+[alias]
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"	# Remove branches that have already been merged with master (a.k.a. ‘delete merged’
+
